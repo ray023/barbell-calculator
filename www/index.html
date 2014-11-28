@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <title>Barbell Calculator</title>
+    </head>
+    <body>
+        <div data-role="header">
+            <h1>Barbell Calculator</h1>
+        </div>
+        <div class="center-wrapper barbell-weight-display"><h1 id="_calculatedWeight">Calculated on Load</h1></div>
+        <div class="bar-canvas">
+            <canvas id="_barCanvas"></canvas>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <div data-role="fieldcontain">
+                    <select id="_barbellBase" name ="barbell-base" data-role="slider">
+                        <option value="33">33 lb.</option>
+                        <option selected="selected" value="45">45 lb.</option>
+                    </select> 
+                </div>
+            </div>
+            <div class="ui-block-b"><a href="#" id="_resetWeight" data-role="button">Reset</a></div>
+        </div><!-- /grid-a -->
+    <div id="_barbellGrid" data-role="fieldcontain">  
+        This is where the buttons go
+    </div>
+        <div class="app" data-role="content">
+            
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
