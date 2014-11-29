@@ -1,5 +1,3 @@
-var timeOutVarOnDraw	=	0;
-
 function draw_bar_with_weights() 
 {
 		var WIDTH_FACTOR	=	.8; //80% of screen size
@@ -147,19 +145,12 @@ function recalculate_weight()
 
 		draw_bar_with_weights();
 		
-		//if (timeOutVarOnDraw	!==	0)
-		//	clearTimeout(timeOutVarOnDraw);
-	
-		//var timeOutVarOnDraw	=	self.setTimeout(function(){draw_bar_with_weights(); timeOutVarOnDraw	=	0},1000);
 	}
 	else
 	{
 		$('#undo').text('No plates on bar');
 		$('#plates_on_bar').html('');
 		
-		if (timeOutVarOnDraw	!==	0)
-			clearTimeout(timeOutVarOnDraw);
-
 		draw_bar_with_weights();
 	}
 	
