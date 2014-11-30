@@ -10,29 +10,33 @@
         <title>Barbell Calculator</title>
     </head>
     <body>
-        <div data-role="header">
-            <h1>Barbell Calculator</h1>
-        </div>
-        <div class="center-wrapper barbell-weight-display"><h1 id="_calculatedWeight">Calculated on Load</h1></div>
-        <div class="bar-canvas">
-            <canvas id="_barCanvas"></canvas>
-        </div>
-        <div class="ui-grid-a">
-            <div class="ui-block-a">
-                <div data-role="fieldcontain">
-                    <select id="_barbellBase" name ="barbell-base" data-role="slider">
-                        <option value="33">33 lb.</option>
-                        <option selected="selected" value="45">45 lb.</option>
-                    </select> 
-                </div>
+        <div id="_theCalculator" style="display:none;">
+            <div data-role="header">
+                <h1>Barbell Calculator</h1>
             </div>
-            <div class="ui-block-b"><a href="#" id="_resetWeight" data-role="button">Reset</a></div>
-        </div><!-- /grid-a -->
-    <div id="_barbellGrid" data-role="fieldcontain">  
-        This is where the buttons go
-    </div>
-        <div class="app" data-role="content">
-            
+            <div class="center-wrapper barbell-weight-display"><h1 id="_calculatedWeight">Calculated on Load</h1></div>
+            <div class="bar-canvas">
+                <canvas id="_barCanvas"></canvas>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div data-role="fieldcontain">
+                        <select id="_barbellBase" name ="barbell-base" data-role="slider">
+                            <option value="33">33 lb.</option>
+                            <option selected="selected" value="45">45 lb.</option>
+                        </select> 
+                    </div>
+                </div>
+                <div class="ui-block-b"><a href="#" id="_resetWeight" data-role="button">Reset</a></div>
+            </div><!-- /grid-a -->
+        <div id="_barbellGrid" data-role="fieldcontain">  
+            This is where the buttons go
+        </div>
+            <div class="app" data-role="content">
+            </div>
+        </div>
+        <div id="_splashDiv" style="line-height:  90px; text-align:center;">
+            <h2>loading...</h2>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

@@ -1,5 +1,4 @@
 var app = {
-    // Application Constructor
     initialize: function() {
         this.bindEvents();
     },
@@ -8,11 +7,10 @@ var app = {
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        $('#_splashDiv').hide();
+        $('#_theCalculator').show();
     },
-    receivedEvent: function(id) {
-        //var parentElement = document.getElementById(id);
-        //var barbellGrid = parentElement.querySelector('#_barbellGrid');
-
+    receivedEvent: function() {
         var plate_class_array  =   new Array('0.25','2.5','5','10','15','25','35','45');
         var barbell_calculator =   '<div class="ui-grid-b" >';
     
